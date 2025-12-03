@@ -1,4 +1,4 @@
-const strA = 'cat'
-const strB = 'act'
+const arr = [0, 1, 2, 3, 4];
+const size = 2
 
-console.log(strA.split('').sort().join('') === strB.split('').sort().join(''))
+console.log(arr.slice(4, 6))

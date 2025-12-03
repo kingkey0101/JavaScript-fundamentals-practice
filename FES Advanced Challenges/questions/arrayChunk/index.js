@@ -8,7 +8,16 @@
  */
 
 const arrayChunk = (array, size) => {
-  
+    //create an empty 'chunkedArray' to hold the subarrays 
+  const chunkedArray = []
+//   for each index in the array that is divisible by 'size':
+for (let i = 0; i < array.length; i += size){
+    //create a subarray of length 'size' that slices from the current index
+    const subarray = array.slice(i, i + size);
+    //push this subarray to our 'chunkedArray'
+    chunkedArray.push(subarray)
+}
+return chunkedArray
 };
 
 module.exports = arrayChunk;
