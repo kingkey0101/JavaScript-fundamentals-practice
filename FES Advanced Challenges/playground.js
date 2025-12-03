@@ -1,4 +1,6 @@
-const arr = [0, 1, 2, 3, 4];
-const size = 2
+const str = 'frontend'
 
-console.log(arr.slice(4, 6))
+const firstLetter = str[0].toUpperCase()
+const restOfString = str.slice(1)
+
+console.log(firstLetter, restOfString)
